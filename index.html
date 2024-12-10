@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory Control</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Form Produk</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="kode-produk">Kode Produk</label>
+            <br>
+            <input readonly id="kode-produk" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="nama-produk">Nama Produk</label>
+            <br>
+            <input id="nama-produk" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="harga-produk">Harga</label>
+            <input id="harga-produk" type="number">
+        </div>
+
+        <div class="form-group">
+            <label for="satuan-produk">Satuan</label>
+            <select id="satuan-produk">
+                <option>Opsi Pertama</option>
+                <option>Opsi Kedua</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="kategori-produk">Kategori</label>
+            <select id="kategori-produk">
+                <option>Minuman dingin</option>
+                <option>Minuman panas</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="url-produk">URL Gambar</label>
+            <input id="url-produk" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="stok-produk">Stok Awal</label>
+            <input id="stok-produk" type="number">
+        </div>
+
+        <div class="form-action">
+            <button id="submit" onclick="menyimpanProduk()">Submit</button>
+        </div>
+    </div>
+
+    <table class="inventory-table">
+        <thead>
+            <tr>
+                <th>Nomor</th>
+                <th>Kode Produk</th>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+                <th>Satuan</th>
+                <th>Kategori</th>
+                <th>Gambar</th>
+                <th>Stok Awal</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody id="t-body">
+            <tr>
+                <td>1</td>
+                <td>155</td>
+                <td>Es Teh</td>
+                <td>Rp5.000</td>
+                <td>Gelas</td>
+                <td>Minuman Dingin</td>
+                <td><img src="download.jpg" alt="es teh" width="100" height="100"></td>
+                <td>50</td>
+                <td>Edit:Hapus</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="button.js"></script>
+</body>
+</html>

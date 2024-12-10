@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 60%; /* 60% dari lebar layar */
+    max-width: 800px; /* Tidak lebih dari 800px */
+    margin: 50px auto;
+    padding: 50px;
+    background-image: linear-gradient(#0009C4, #4280fa, rgb(135, 179, 255));
+    font-size: medium;
+    color: white;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+
+.form-action {
+    text-align: center;
+}
+
+.form-action button {
+    display: inline-block;
+    background-image: linear-gradient(blue, cyan);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.inventory-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+
+.inventory-table th {
+    background-color: #0009C4;
+    color: white;
+    padding: 10px;
+}
+
+.inventory-table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.inventory-table img {
+    padding: 5px;
+}
